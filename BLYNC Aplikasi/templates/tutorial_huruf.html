@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keyboard Braille</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div id="braille-grid">
+    <div class="braille-column">
+      <div class="dot" data-dot="1" style="color: white; display: flex; justify-content: center;"><h2>1</h2></div>
+      <div class="dot" data-dot="2" style="color: white; display: flex; justify-content: center;"><h2>2</h2></div>
+      <div class="dot" data-dot="3" style="color: white; display: flex; justify-content: center;"><h2>3</h2></div>
+    </div>
+
+    <div id="middle-area">
+      <div id="current-letter" class="letter-display">Huruf: A</div> <!-- Tambahan -->
+      <div id="output" class="output-box"></div>
+      
+      
+    </div>
+
+    <div class="braille-column">
+      <div class="dot" data-dot="4" style="color: white; display: flex; justify-content: center;"><h2>4</h2></div>
+      <div class="dot" data-dot="5" style="color: white; display: flex; justify-content: center;"><h2>5</h2></div>
+      <div class="dot" data-dot="6" style="color: white; display: flex; justify-content: center;"><h2>6</h2></div>
+  </div>
+  <script src="/static/tutorial_huruf.js"></script>
+</body>
+</html>

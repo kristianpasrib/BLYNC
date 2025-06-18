@@ -1,0 +1,65 @@
+body {
+  background-color: #111;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.splash-container {
+  animation: fadeIn 2s ease-in-out;
+  text-align: center;
+}
+
+.gradient-text {
+  font-size: 4rem;
+  background: linear-gradient(90deg, #1e90ff, #00ffff, #1e90ff);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 3s linear infinite;
+  letter-spacing: 0.3rem;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.dot-pulse {
+  margin: 30px auto 0;
+  width: 10px;
+  height: 10px;
+  background-color: #1e90ff;
+  border-radius: 50%;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
